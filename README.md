@@ -1,9 +1,9 @@
 # Lesion Detection from CT scans using convolutional neural networks
 
-Abstract
+Abstract:
 Medical imaging and CAD is one of the most challenging and important futuristic artificial intelligence work which has been carried out since the past few decades. A major milestone in this development is image detection in CT scan reports of medical imaging. As a part of this exploratory study we attempted to locate the lesion using comparatively less computational power on the DeepLesion dataset from PACs. Our unique approach divided the entire project into two phases, first phase involved building a model for the classification of the CT images into the different anatomical parts and the second phase focused on locating the lesion in each of these body parts. As a result we have achieved 95% classification accuracy and we were successful in locating the lesion. The paradigm of occurrence for lesion is detected as we go deeper into the convolutional layers.
 
-Introduction
+Introduction:
 Convolution neural networks have proven to be highly significant in the field of biomedical image processing and have provided extremely insightful predictions in models concerning object classification and detection.
 Our dataset, named DeepLesion, is composed of 32,735 lesions in 32,120 bookmarked CT slices from 10,594 studies of 4427 unique patients. We have used a subset of 9816 images containing the CT scans of all the 8 body parts for both classification and lesion detection.
 In our project, we have undertaken the challenge of locating the lesion without the use of a pretrained network.
@@ -19,7 +19,6 @@ Modeling approach : 3 model architectures were created by each of the team membe
 Model 1: Deep Network with High Parameters
 Model 2: Deep Network with Low Parameters
 Model 3: Shallow Network with High Parameters
-
 Outputs: Probabilities for each image amongst the 8 classes.
 After the comparisons of results of all three models, we selected Model 1 as the best classification model. The architecture of our best model is shown below.
 
@@ -37,6 +36,6 @@ For our project, we are prediction only p and rest are not considered.
 Outputs: Probabilities of lesion in each grid.
 Architecture is as follow...
 
-Conclusion
+Conclusion:
 Although this project is predominantly focused on locating the lesion, classification of the body parts provided a much needed vision for our network to learn the pattern of each body part and differentiate them from one another which helped in the progression towards our lesion detection model. The fundamental highlight of this project is successfully achieving lesion detection without the use of pretrained networks. 
 In the future, we plan on improving our accuracy for locating lesion and predict the exact location with more precision including the midpoint and size of lesion. This could be accomplished by increasing our dataset with collection of more heterogeneous data from radiology reports. Further advancement of this project would be to develop a universal lesion detection framework using a unified detection system which would be beneficial for the medical society.
